@@ -24,10 +24,13 @@ def main():
     #os.rename("textfile.txt", "newfile.txt")
 
     # now put things into a ZIP archive
-    root_dir, tail = path.split(src)
-    shutil.make_archive("archive", "zip", root_dir)
+    #root_dir, tail = path.split(src)
+    #shutil.make_archive("archive", "zip", root_dir)
 
     # more fine-grained control over ZIP files
+    with ZipFile("testzip.zip", "w") as newzip:
+      newzip.write("textfile.txt")
+      newzip.write("textfile.txt.bak")
 
       
 if __name__ == "__main__":

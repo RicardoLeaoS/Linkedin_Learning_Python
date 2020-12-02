@@ -25,7 +25,7 @@ def main():
   print("%d skills: " % skills.length)
   for s in skills:
     print("skill " + s.getAttribute("name"))
-    
+
 if __name__ == "__main__":
   main()
 

@@ -5,15 +5,18 @@
 from datetime import date
 from datetime import time
 from datetime import datetime
-
+from datetime import timedelta
 
 # construct a basic timedelta and print it
 
+print(timedelta(days=10, hours=10, minutes=30))
 
 # print today's date
-
+now = datetime.now()
+print("today's date: ", now.date())
 
 # print today's date one year from now
+print("one year from now: ", (now + timedelta(days=365)).date())
 
 
 # create a timedelta that uses more than one argument

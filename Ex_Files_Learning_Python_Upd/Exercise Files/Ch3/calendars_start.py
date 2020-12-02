@@ -3,11 +3,12 @@
 #
 
 # import the calendar module
+import calendar
 
 
 # create a plain text calendar
-
-
+c = calendar.TextCalendar(calendar.SUNDAY)
+print(c.formatmonth(2020, 12))
 # create an HTML formatted calendar
 
 
